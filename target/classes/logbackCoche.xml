@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property name="LOG_DIR" value="c:\\logs" />
+
+	<appender name="fichero" class="ch.qos.logback.core.FileAppender">
+		<file>${LOG_DIR}\salidaCoche.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %red%msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+
+	<logger name="Coche" level="INFO">
+		<appender-ref ref="coche" />
+	</logger>
+	
+	<logger name="Consola" level="INFO">
+		<appender-ref ref="consola" />
+	</logger>
+
+</configuration>
