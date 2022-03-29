@@ -37,4 +37,8 @@ public class miniCalculadoraEjemplo {
 		return Math.sqrt(numeroRecibido);
 	}
 
+	int hola() {
+		return 1;
+	}
+
 }
